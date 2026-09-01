@@ -3,7 +3,7 @@ const current = document.body.dataset.page || "home";
 const pages = [
   ["home", "Home", ""], ["news", "News", "news/"], ["seminar", "Seminar", "seminar/"],
   ["teaching", "Teaching", "teaching/"], ["research", "Research", "research/"],
-  ["team", "Team", "team/"], ["jobs", "Jobs", "jobs/"]
+  ["people", "People", "people/"]
 ];
 
 const nav = pages.map(([id, label, href]) =>
@@ -14,7 +14,7 @@ document.querySelector("[data-site-header]").innerHTML = `
   <div class="topbar">
     <a class="brand" href="${root}" aria-label="Chair in Mathematical Optimization, home">
       <span class="brand-mark">M<span>O</span></span>
-      <span><strong>Mathematical Optimization</strong><small>University of Mannheim</small></span>
+      <span><strong>Mathematical Optimization</strong><small>Vienna Universit Economics and Business </small></span>
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" aria-label="Main navigation">${nav}</nav>
@@ -22,9 +22,9 @@ document.querySelector("[data-site-header]").innerHTML = `
 
 document.querySelector("[data-site-footer]").innerHTML = `
   <div class="footer-grid">
-    <div><strong>Chair in Mathematical Optimization</strong><p>University of Mannheim<br>School of Business Informatics and Mathematics<br>B6 · 68159 Mannheim · Germany</p></div>
-    <div><strong>Contact</strong><p><a href="mailto:mathias.staudigl@uni-mannheim.de">mathias.staudigl@uni-mannheim.de</a><br><a href="https://orcid.org/0000-0003-2481-0019">ORCID 0000-0003-2481-0019</a></p></div>
-    <div><strong>University</strong><p><a href="https://www.uni-mannheim.de/en/">University of Mannheim</a><br><a href="https://www.wim.uni-mannheim.de/en/">School website</a></p></div>
+    <div><strong>Chair in Mathematical Optimization</strong><p>Vienna Universit of Economics and Business<br>Department of Business Analytics and Decisiion Sciences (BADS)<br>B6 · 68159 Mannheim · Germany</p></div>
+    <div><strong>Contact</strong><p><a href="mailto:mstaudigl@wu-wien.ac.at">mstaudigl@wu-wien.ac.at</a><br><a href="https://orcid.org/0000-0003-2481-0019">ORCID 0000-0003-2481-0019</a></p></div>
+    <div><strong>University</strong><p><a href="https://www.wu.ac.at">Vienna Universit of Economics and Business</a><br><a href="https://www.wu.ac.at">School website</a></p></div>
   </div>
   <div class="footer-bottom"><span>© ${new Date().getFullYear()} Mathias Staudigl</span><span>Mathematics · Optimization · Decisions</span></div>`;
 
