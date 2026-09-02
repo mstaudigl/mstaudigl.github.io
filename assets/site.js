@@ -2,8 +2,7 @@ const root = document.body.dataset.root || "";
 const current = document.body.dataset.page || "home";
 const pages = [
   ["home", "Home", ""], ["news", "News", "news/"], ["seminar", "Seminar", "seminar/"],
-  ["teaching", "Teaching", "teaching/"], ["research", "Research", "research/"],
-  ["people", "People", "people/"]
+  ["teaching", "Teaching", "teaching/"], ["research", "Research", "research/"]
 ];
 
 const nav = pages.map(([id, label, href]) =>
@@ -26,7 +25,7 @@ document.querySelector("[data-site-footer]").innerHTML = `
     <div><strong>Contact</strong><p><a href="mailto:mstaudigl@wu-wien.ac.at">mstaudigl@wu-wien.ac.at</a><br><a href="https://orcid.org/0000-0003-2481-0019">ORCID 0000-0003-2481-0019</a></p></div>
     <div><strong>University</strong><p><a href="https://www.wu.ac.at">Vienna University of Economics and Business</a><br><a href="https://www.wu.ac.at">School website</a></p></div>
   </div>
-  <div class="footer-bottom"><span>© ${new Date().getFullYear()} Mathias Staudigl</span><span>Mathematics · Optimization · Decisions</span></div>`;
+  <div class="footer-bottom"><span>© ${new Date().getFullYear()} Mathias Staudigl</span><span>Mathematics · Optimization · Decisions · Analytics </span></div>`;
 
 const button = document.querySelector(".menu-button");
 const menu = document.querySelector("#site-nav");
